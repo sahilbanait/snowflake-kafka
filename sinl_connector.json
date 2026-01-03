@@ -1,0 +1,46 @@
+{
+ "name": "SnowflakeSinkConnector_<alias>",
+ "config": {
+  "connector.class": "com.snowflake.kafka.connector.SnowflakeStreamingSinkConnector",
+  "name": "SnowflakeSinkConnector_kafka",
+  "topics": "SnowflakeSink_kafka",
+  "tasks.max": "2",
+  "buffer.flush.time": "10",
+  "buffer.count.records": "10",
+  "buffer.size.bytes": "5000000",
+  "snowflake.url.name": "sfctest0.snowflakecomputing.com:443",
+  "snowflake.user.name": "svc_kafka",
+  "snowflake.private.key": "MIIFLTBXBgkqhkiG9w0BBQ0wSjApBgkqhkiG9w0BBQwwHAQI3eOptOST/tECAggA
+                            MAwGCCqGSIb3DQIJBQAwHQYJYIZIAWUDBAEqBBDQxwaw+M+8ol6SFoWEOvKbBIIE
+                            0DePDNhOeVNfzCfFSMZ+yUxQVVzwUsN6b34E8Z75tzW74eMjov1Piflfr10+dR9p
+                            aXI5gHQZ5BF8uWl71JtjevtOkZt0+oe7sKHD+z/Iv60A/htZz1vTdQNaKnaI2wy4
+                            sn0Z8RG4nMaJ+BMZoFms/0L3vchTSRcGoSbig/8PIkGLszIZJcEFvVKd4oqtKYqe
+                            0aPB797ysFWRmli1ggpaS5g+g1/lBVsiekhK4SlrJ/M+h4atR31E4b4Nh6OBMKxM
+                            nnNR0FnDNlZR5dYRkgg2CPmMXeEo+mEkBzg4A+aY1ZF8/cD33WvSaJlGPZUhg1E2
+                            dVQiekeNdcbIaC+2sS1+Tavgc8FJ4XmBm30w+dpW5Jxh+77S7uYkZnsRg6og9fld
+                            cnc29piJPW7JoxrmIVB0onxjfJM7J0DLBuFINOySuT+oFvehFbY8o6qQ7gKb8/g0
+                            VNDuCLj1rfWM2+hRb3dkrKgvXkVYRUJxSYtwPiwFhQchUcX4FUUlzPO1AHNlfOVg
+                            zmnME+/gze5LfzxzdqNX48b2ikb6YddBD91BuWse4zRGy1lDCFJ72PXW2ukKmZKj
+                            Yj82/Dk+dTx1YHelWGoav03xpAKSX9JQAGIBQ88M0GRmaCSDOy30I5EMO/R2ge4Y
+                            vrcaCCO4DPdekGVl/LT605qUKhy8GYEkLfMTSBq7jT7bdw8QR/Eh614BUzdI670q
+                            1vCrmshl4x1awNYpYhccdW/7tVrqIldCXtu8xjKIU+BIBQLRosYPjQMWUhkYCUiz
+                            f0dr9JWjf68HjN12vPhSnL6Tevmfwr3KJ5lGrI5Auk0DeTnCShL90AICN+v4/ceR
+                            bS2+oR3jb1qHl73wF3Wr7kH2EGfOe+vnJopKqnLno3mhUIWgI0oBksFx6iMuPOJG
+                            G9kI9cw5dW+SjqtCfh7Q4+kOeirauVtESNLDsF75/AMQra6WlHZZee1t4gykBoIG
+                            jhxAu6KY2ll6M0iN7llFy0PhAnA2kn81U/6YgVp01WlULP9cpYAWArzm/3vRNovm
+                            V6OK++YyW9pebNA/2VcOSICbbKgs5JA+h9DYIrOmHdTNXcx8AXEJPyQlikkCPaJb
+                            gKGWH18z9SgVhD0es1AWzrCNghhKd7f8m6xXBFvpyLf2nRWAP7K9Wfi58dsMBncF
+                            Qx/JCpAlkeQ2wdoeS4TJmfQu0ec+7j8Z3RTDycYp00bXAl3OHCvN4O/Y6O1Vtqkc
+                            ILu2tX9yfpoggu5bwo0lWS+tbDRKM2axrlPODkl3Kh0EsHa1nR0Wg1Qm/BFtuqeS
+                            yRqCnbdrOVcXAXIqiIX+POeDvIOlVKLf8Suo03uVJbrb+XcgDwrug7m+wSovGNts
+                            1pY+uX0wYo4SjdXdqFyIUoJEIhNJfinbfNZKA3qt3scMaNBO0VhKK8JJGBa7Gx7Q
+                            VRSOVhdWj8jQB/LK9eESVfufK4fwv2e4e17swjEjENpTpjhvdUdJR8zyhgazlCjJ
+                            DdwxaExuOH0sH9cfsN7CfLWDlS6fystfqI8m07yjH4GBjmq9/kvp5Gv83s26jh6z
+                            57dSEtnEzYIuOtUxcT2DytGGXknXY8mnG6/vgLsV8aCaP/UO5QUXvf/S/Tte3xmt
+                            uKhLri2D34vuFKEenmuzAiAvAM8Nv4GKz/iTHsDAOhxa","snowflake.database.name": "dev_raw_db","snowflake.schema.name": "kafka",
+  "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+  "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+  "value.converter.schemas.enable": "false",
+  "jmx": "true"
+ }
+}

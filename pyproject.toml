@@ -1,0 +1,12 @@
+[project]
+name = "snowflake-kafka"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "requests>=2.30.0",
+    "kafka-python>=2.3.0",
+    "confluent-kafka>=2.12.2",
+]
